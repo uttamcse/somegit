@@ -1,0 +1,9 @@
+import cv2
+img=cv2.imread("Trump.jpg")
+
+img1=cv2.Canny(img,50,220)
+
+cv2.imshow("original",img)
+cv2.imshow("canny",img1)
+cv2.waitKey()
+cv2.destroyAllWindows()
